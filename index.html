@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flaversoul Studios</title>
+    <title>Flave R Soul Studios</title>
     <style>
         body {
             background-color: #ffffff !important;
@@ -29,16 +29,16 @@
         }
 
         .showcase-disc {
-            width: 280px;
-            height: 280px;
-            /* Updated to load your local asset folder path */
+            width: 250px; /* Reduced container size slightly from 280px */
+            height: 250px;
             background-image: url("Studio/studio.jpeg");
-            background-size: 100% 100%;
+            /* Adjusted size and position properties to shrink/center the graphic inside the circle border */
+            background-size: 92% 92%; 
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 50%;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            margin-bottom: 35px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
@@ -49,9 +49,9 @@
         .studio-title {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
             font-weight: bold;
-            font-size: 2.2rem;
+            font-size: 2.1rem;
             color: #000000;
-            margin: 0 0 15px 0;
+            margin: 0 0 12px 0;
             letter-spacing: 0.5px;
         }
 
@@ -72,10 +72,11 @@
 <body>
 
     <a href="booking.html" class="branding-container">
-        <!-- Renders your Studio/studio.jpeg graphic inside the vinyl disc container -->
+        <!-- Mask dimensions adjusted slightly inward -->
         <div class="showcase-disc"></div>
 
-        <h1 class="studio-title">Flaversoul Studios</h1>
+        <!-- Target Brand Alignment -->
+        <h1 class="studio-title">Flave R Soul Studios</h1>
         <p class="studio-subtitle">“Studio Hire & Producer Booking”</p>
     </a>
 
