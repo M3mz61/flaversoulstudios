@@ -24,18 +24,26 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            text-decoration: none;
+            color: #000000;
         }
 
         .showcase-disc {
             width: 280px;
             height: 280px;
-            background-image: url("https://flaversoulrecords.com");
+            /* Updated to load your local asset folder path */
+            background-image: url("Studio/studio.jpeg");
             background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 50%;
             margin-bottom: 40px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .branding-container:hover .showcase-disc {
+            transform: scale(1.02);
         }
 
         .studio-title {
@@ -53,19 +61,23 @@
             font-size: 1.15rem;
             color: #555555;
             margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .branding-container:hover .studio-subtitle {
+            color: #000000;
         }
     </style>
 </head>
 <body>
 
-    <div class="branding-container">
-        <!-- Consistent Centered Logo Asset -->
+    <a href="booking.html" class="branding-container">
+        <!-- Renders your Studio/studio.jpeg graphic inside the vinyl disc container -->
         <div class="showcase-disc"></div>
 
-        <!-- Uniform Typography Layout -->
         <h1 class="studio-title">Flaversoul Studios</h1>
         <p class="studio-subtitle">“Studio Hire & Producer Booking”</p>
-    </div>
+    </a>
 
 </body>
 </html>
