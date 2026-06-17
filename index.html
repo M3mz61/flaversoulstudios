@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Hire — Flaversoul Records</title>
+    <title>Flaversoul Studios</title>
     <style>
         body {
             background-color: #ffffff !important;
             color: #000000 !important;
             margin: 0;
-            padding: 60px 20px;
+            padding: 0;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
             box-sizing: border-box;
         }
 
+        .branding-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
         .showcase-disc {
             width: 280px;
             height: 280px;
-            background-image: url("Logo/studio.jpeg");
-            background-size: 116% 116%;
+            background-image: url("https://flaversoulrecords.com");
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 50%;
@@ -29,213 +38,34 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.12);
         }
 
-        .price-container {
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 45px;
-            border-top: 1px dashed #000000;
-            border-bottom: 1px dashed #000000;
-            padding: 25px 10px;
-            box-sizing: border-box;
-        }
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 16px;
-        }
-        .price-row:last-child {
-            margin-bottom: 0;
-        }
-        .price-item {
+        .studio-title {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
             font-weight: bold;
+            font-size: 2.2rem;
+            color: #000000;
+            margin: 0 0 15px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .studio-subtitle {
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
-            color: #000000;
-            letter-spacing: 1px;
-        }
-        .price-value {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #000000;
-        }
-        .price-subtext {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem;
-            color: #000000;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 2px;
-        }
-
-        .tracklist-container {
-            width: 100%;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-        .track-entry {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            border: 1px solid #000000;
-            border-radius: 4px;
-            background-color: #ffffff;
-            text-decoration: none;
-            color: #000000;
-            transition: all 0.3s ease;
-        }
-        .track-entry:hover {
-            border-color: #000000;
-            background-color: #ffffff;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transform: translateY(-2px);
-        }
-        .track-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 6px;
-        }
-        .track-name {
-            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
-            font-weight: bold;
-            font-size: 1.3rem;
-            color: #000000;
-        }
-        .track-version {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem;
-            color: #000000;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-        .track-meta {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.75rem;
-            color: #000000;
-            letter-spacing: 0.5px;
-        }
-
-        .foyer-button {
-            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
-            font-weight: bold;
-            font-size: 1rem;
-            color: #000000;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-decoration: none;
-            padding: 10px 25px;
-            border: 1px solid #000000;
-            border-radius: 2px;
-            background: transparent;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .foyer-button:hover {
-            background-color: #000000;
-            color: #ffffff;
-            letter-spacing: 4px;
+            color: #555555;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="showcase-disc"></div>
+    <div class="branding-container">
+        <!-- Consistent Centered Logo Asset -->
+        <div class="showcase-disc"></div>
 
-    <div class="price-container">
-        <div class="price-row">
-            <div>
-                <div class="price-item">Single Hour Run</div>
-                <div class="price-subtext">Quick drop-ins & spot edits</div>
-            </div>
-            <span class="price-value">£75</span>
-        </div>
-        <div class="price-row" style="margin-top: 16px; margin-bottom: 16px;">
-            <div>
-                <div class="price-item">Two Hour Session</div>
-                <div class="price-subtext">Focused tracking window</div>
-            </div>
-            <span class="price-value">£140</span>
-        </div>
-        <div class="price-row" style="margin-bottom: 16px;">
-            <div>
-                <div class="price-item">Half Day Session (3-4 Hours)</div>
-                <div class="price-subtext">Acoustic runs & arrangement blocks</div>
-            </div>
-            <span class="price-value">£65 / hr</span>
-        </div>
-        <div class="price-row">
-            <div>
-                <div class="price-item">Full Day Lockout (8 Hours)</div>
-                <div class="price-subtext">Comprehensive recording & tracking block</div>
-            </div>
-            <span class="price-value">£375</span>
-        </div>
+        <!-- Uniform Typography Layout -->
+        <h1 class="studio-title">Flaversoul Studios</h1>
+        <p class="studio-subtitle">“Studio Hire & Producer Booking”</p>
     </div>
-
-    <div class="tracklist-container">
-        <a href="mailto:memz@flaversoulrecords.com" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Main Tracking Room A</span>
-                <span class="track-version">Book Session →</span>
-            </div>
-            <span class="track-meta">Primary Rig: Neumann U87 Ai Suite • Availability: By Appointment Only • 2026</span>
-        </a>
-
-        <a href="mailto:memz@flaversoulrecords.com" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Production & Mixing Bay B</span>
-                <span class="track-version">Hire Producer →</span>
-            </div>
-            <span class="track-meta">Primary Rig: Custom Control Matrix & Producer Hire • Availability: By Appointment Only • 2026</span>
-        </a>
-
-        <a href="guitar.html" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Guitars</span>
-                <span class="track-version">View Guitars →</span>
-            </div>
-        </a>
-
-        <a href="midi.html" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">MIDI</span>
-                <span class="track-version">View MIDI →</span>
-            </div>
-        </a>
-
-        <a href="micamp.html" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Mics, Amps & Monitors</span>
-                <span class="track-version">View Equipment →</span>
-            </div>
-            <span class="track-meta">Hardware Rigs: Premium Studio Monitors, Outboard Gear & Microphone Setup</span>
-        </a>
-
-        <a href="analog.html" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">FX and DSP</span>
-                <span class="track-version">View Gear →</span>
-            </div>
-            <span class="track-meta">Processing Rack: Classic Analog Routing, Mixing Desks & Distortion Units</span>
-        </a>
-
-        <a href="mac.html" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Mac Pro and Plugins</span>
-                <span class="track-version">View Architecture →</span>
-            </div>
-            <span class="track-meta">Digital Core: Waves Mercury, UAD Octo DSP Acceleration & Studio Classics</span>
-        </a>
-    </div>
-
-    <a href="foyer.html" class="foyer-button">Return to Foyer</a>
 
 </body>
 </html>
