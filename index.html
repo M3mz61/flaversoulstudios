@@ -28,7 +28,6 @@
             color: #000000;
         }
 
-        /* Restored 100% to your original structural sizing properties */
         .showcase-disc {
             width: 280px;
             height: 280px;
@@ -51,33 +50,53 @@
             font-weight: bold;
             font-size: 2.2rem;
             color: #000000;
-            margin: 0 0 15px 0;
+            margin: 0 0 30px 0;
             letter-spacing: 0.5px;
         }
 
-        .studio-subtitle {
-            font-family: "Bodoni 72", "Bodoni MT", "Didot", Georgia, serif;
-            font-style: italic;
-            font-size: 1.15rem;
-            color: #555555;
-            margin: 0;
-            transition: color 0.3s ease;
+        /* Premium Button Container & Styling */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 240px;
         }
 
-        .branding-container:hover .studio-subtitle {
+        .premium-btn {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 14px 20px;
+            border: 1px solid #000000;
+            border-radius: 0; /* Sharp luxurious look, change to 4px if you want a slight curve */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .premium-btn:hover {
+            background-color: #ffffff;
             color: #000000;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
-    <a href="booking.html" class="branding-container">
-        <!-- Reverted back to your native 116% crop profile layout -->
+    <div class="branding-container">
         <div class="showcase-disc"></div>
-
         <h1 class="studio-title">Flave R Soul Studios</h1>
-        <p class="studio-subtitle">“Studio Hire & Producer Booking”</p>
-    </a>
+        
+        <div class="button-group">
+            <a href="booking.html" class="premium-btn">Studio Hire</a>
+            <a href="mastering.html" class="premium-btn">Mastering</a>
+        </div>
+    </div>
 
 </body>
 </html>
