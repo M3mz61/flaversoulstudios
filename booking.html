@@ -17,17 +17,19 @@
             box-sizing: border-box;
         }
 
-        /* Vinyl Disc Graphic Profile Layer — Fixed case-sensitive folder path */
+        /* Vinyl Disc Graphic Profile Layer */
         .showcase-disc {
             width: 280px;
             height: 280px;
-            background-image: url("Studio/studio.jpeg");
+            background-image: url("FX/studio.jpeg");
             background-size: 116% 116%;
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 50%;
             margin-bottom: 40px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            transform: translateZ(0);
+            will-change: transform;
         }
 
         /* Section Dividers */
@@ -99,10 +101,12 @@
             transition: all 0.3s ease;
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
+            transform: translateZ(0);
+            will-change: transform;
         }
         .track-entry:hover {
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transform: translateY(-2px);
+            transform: translateY(-2px) translateZ(0);
         }
         .track-header {
             display: flex;
@@ -169,7 +173,7 @@
             letter-spacing: 4px;
         }
 
-        /* iPhone Responsive Media Queries */
+        /* iPhone Sizing Rules */
         @media (max-width: 600px) {
             body {
                 padding: 40px 15px;
@@ -235,10 +239,10 @@
 
     <hr class="layout-divider">
 
-    <!-- Equipment List Options Block -->
+    <!-- Corrected Equipment List Options Block -->
     <div class="tracklist-container">
 
-        <!-- Guitars Card — Verified pointing to guitar.html -->
+        <!-- Guitars Card -->
         <a href="guitar.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Guitars</span>
@@ -246,16 +250,16 @@
             </div>
         </a>
 
-        <!-- MIDI Card — Pointed temporarily to javascript void until you push midi.html -->
-        <a href="javascript:void(0);" class="track-entry" style="opacity: 0.85;">
+        <!-- MIDI Card -->
+        <a href="midi.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">MIDI</span>
                 <span class="track-version">View &rarr;</span>
             </div>
         </a>
 
-        <!-- Mics, Amps & Monitors Card — Pointed temporarily to javascript void until you push equipment.html -->
-        <a href="javascript:void(0);" class="track-entry" style="opacity: 0.85;">
+        <!-- Mics, Amps & Monitors Card -->
+        <a href="equipment.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mics, Amps & Monitors</span>
                 <span class="track-version">View &rarr;</span>
@@ -263,7 +267,7 @@
             <span class="track-meta">Hardware Rigs: Premium Studio Monitors, Outboard Gear & Microphone Setup</span>
         </a>
 
-        <!-- FX and DSP Card — Verified pointing to analogue.html -->
+        <!-- FX and DSP Card -->
         <a href="analogue.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">FX and DSP</span>
@@ -272,8 +276,8 @@
             <span class="track-meta">Processing Rack: Classic Analog Routing, Mixing Desks & Distortion Units</span>
         </a>
 
-        <!-- Mac Pro and Plugins Card — Pointed temporarily to javascript void until you push architecture.html -->
-        <a href="javascript:void(0);" class="track-entry" style="opacity: 0.85;">
+        <!-- Mac Pro and Plugins Card -->
+        <a href="architecture.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mac Pro and Plugins</span>
                 <span class="track-version">View &rarr;</span>
