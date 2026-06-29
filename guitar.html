@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Instruments — Flaversoul Records</title>
+    <style>
+        body {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 50px;
+        }
+
+        .instrument-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .instrument-name {
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .instrument-meta {
+            font-size: 0.9rem;
+            color: #000000;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        .foyer-button {
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 10px 25px;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .foyer-button:hover {
+            background-color: #000000;
+            color: #ffffff;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="instrument-card">
+            <img src="Guitar/WS12.jpg" alt="Washburn WD10S12">
+            <span class="instrument-name">Washburn WD10S12</span>
+            <span class="instrument-meta">0.12 Martin Bronze Acoustic Strings</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/J45std.jpeg" alt="Gibson J45 Standard">
+            <span class="instrument-name">Gibson J45 Standard</span>
+            <span class="instrument-meta">0.14 Martin Bronze Acoustic Strings</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/Hnyd1.jpeg" alt="Gretsch Honeydipper">
+            <span class="instrument-name">Gretsch Honeydipper</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/ES355.jpeg" alt="Ltd Edition 1959 Reissue Epiphone ES335">
+            <span class="instrument-name">Ltd Edition 1959 Reissue Epiphone ES335</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/hws1.jpeg" alt="USA Fender Stratocaster">
+            <span class="instrument-name">USA Fender Stratocaster</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/Jem.jpg" alt="Ibanez Steve Vai Signature JEM">
+            <span class="instrument-name">Ibanez Steve Vai Signature JEM</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/LP1.jpeg" alt="Heritage 1950s Reissue Gibson Les Paul Standard">
+            <span class="instrument-name">Heritage 1950s Reissue Gibson Les Paul Standard</span>
+        </div>
+        
+        <div class="instrument-card">
+            <img src="Guitar/SRX700.jpeg" alt="Ibanez SRX700 Bass">
+            <span class="instrument-name">Ibanez SRX700 Bass</span>
+            <span class="instrument-meta">Natural blonde finish</span>
+        </div>
+    </div>
+
+    <a href="studio.html" class="foyer-button">Return to Studio</a>
+
+</body>
+</html>
