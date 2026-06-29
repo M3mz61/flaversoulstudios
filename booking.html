@@ -17,6 +17,7 @@
             box-sizing: border-box;
         }
 
+        /* Vinyl Disc Graphic Profile Layer */
         .showcase-disc {
             width: 280px;
             height: 280px;
@@ -29,20 +30,28 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.12);
         }
 
+        /* Section Dividers */
+        .layout-divider {
+            width: 100%;
+            max-width: 600px;
+            border: none;
+            border-top: 1px solid #000000;
+            margin: 0 0 30px 0;
+        }
+
+        /* Pricing Sheet Core Container */
         .price-container {
             width: 100%;
             max-width: 600px;
-            margin-bottom: 45px;
-            border-top: 1px dashed #000000;
-            border-bottom: 1px dashed #000000;
-            padding: 25px 10px;
+            margin-bottom: 30px;
+            padding: 0 10px;
             box-sizing: border-box;
         }
         .price-row {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
         .price-row:last-child {
             margin-bottom: 0;
@@ -50,14 +59,14 @@
         .price-item {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
             font-weight: bold;
-            font-size: 1.15rem;
+            font-size: 1.25rem;
             color: #000000;
             letter-spacing: 1px;
         }
         .price-value {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
+            font-size: 1.25rem;
+            font-weight: bold;
             color: #000000;
         }
         .price-subtext {
@@ -66,31 +75,32 @@
             color: #000000;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-top: 2px;
+            margin-top: 4px;
         }
 
+        /* Equipment List Options Block */
         .tracklist-container {
             width: 100%;
             max-width: 600px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
         .track-entry {
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 22px 20px;
             border: 1px solid #000000;
             border-radius: 4px;
             background-color: #ffffff;
             text-decoration: none;
             color: #000000;
             transition: all 0.3s ease;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
         .track-entry:hover {
-            border-color: #000000;
-            background-color: #ffffff;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
             transform: translateY(-2px);
         }
@@ -98,13 +108,14 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 6px;
+            gap: 15px;
         }
         .track-name {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: #000000;
+            letter-spacing: 0.5px;
         }
         .track-version {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -112,17 +123,27 @@
             color: #000000;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s ease;
+            white-space: nowrap;
         }
         .track-meta {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             color: #000000;
             letter-spacing: 0.5px;
+            line-height: 1.4;
+            margin-top: 8px;
         }
 
-        /* Restored Premium Foyer Button styling */
+        /* Twin Navigation Control Buttons */
+        .navigation-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 10px;
+        }
         .foyer-button {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
             font-weight: bold;
@@ -131,17 +152,45 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             text-decoration: none;
-            padding: 10px 25px;
+            padding: 12px 0;
+            width: 150px;
             border: 1px solid #000000;
             border-radius: 2px;
             background: transparent;
             transition: all 0.3s ease;
             cursor: pointer;
+            text-align: center;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
         .foyer-button:hover {
             background-color: #000000;
             color: #ffffff;
             letter-spacing: 4px;
+        }
+
+        /* iPhone Sizing Rules: Fixes tight text overlaps */
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 15px;
+            }
+            .showcase-disc {
+                width: 260px;
+                height: 260px;
+                margin-bottom: 30px;
+            }
+            .track-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .track-name {
+                font-size: 1.3rem;
+            }
+            .track-version {
+                font-size: 0.75rem;
+                margin-top: 2px;
+            }
         }
     </style>
 </head>
@@ -149,6 +198,8 @@
 
     <!-- Vinyl Disc Graphic Profile Layer -->
     <div class="showcase-disc"></div>
+
+    <hr class="layout-divider">
 
     <!-- Pricing Sheet Core Container -->
     <div class="price-container">
@@ -159,14 +210,14 @@
             </div>
             <span class="price-value">£75</span>
         </div>
-        <div class="price-row" style="margin-top: 16px; margin-bottom: 16px;">
+        <div class="price-row">
             <div>
                 <div class="price-item">Two Hour Session</div>
                 <div class="price-subtext">Focused tracking window</div>
             </div>
             <span class="price-value">£140</span>
         </div>
-        <div class="price-row" style="margin-bottom: 16px;">
+        <div class="price-row">
             <div>
                 <div class="price-item">Half Day Session (3-4 Hours)</div>
                 <div class="price-subtext">Acoustic runs & arrangement blocks</div>
@@ -182,65 +233,63 @@
         </div>
     </div>
 
+    <hr class="layout-divider">
+
     <!-- Equipment List Options Block -->
     <div class="tracklist-container">
-        <a href="mailto:bookings@flaversoulstudios.com" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Main Tracking Room A</span>
-                <span class="track-version">Book Session →</span>
-            </div>
-            <span class="track-meta">Primary Rig: Neumann U87 Ai Suite • Availability: By Appointment Only • 2026</span>
-        </a>
 
-        <a href="mailto:bookings@flaversoulstudios.com" class="track-entry">
-            <div class="track-header">
-                <span class="track-name">Production & Mixing Bay B</span>
-                <span class="track-version">Hire Producer →</span>
-            </div>
-            <span class="track-meta">Primary Rig: Custom Control Matrix & Producer Hire • Availability: By Appointment Only • 2026</span>
-        </a>
-
-        <a href="https://flaversoulrecords.com" class="track-entry">
+        <!-- Guitars Card -->
+        <a href="guitar.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Guitars</span>
-                <span class="track-version">View Guitars →</span>
+                <span class="track-version">View &rarr;</span>
             </div>
         </a>
 
-        <a href="https://flaversoulrecords.com" class="track-entry">
+        <!-- MIDI Card -->
+        <a href="midi.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">MIDI</span>
-                <span class="track-version">View MIDI →</span>
+                <span class="track-version">View &rarr;</span>
             </div>
         </a>
 
-        <a href="https://flaversoulrecords.com" class="track-entry">
+        <!-- Mics, Amps & Monitors Card -->
+        <a href="hardware.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mics, Amps & Monitors</span>
-                <span class="track-version">View Equipment →</span>
+                <span class="track-version">View &rarr;</span>
             </div>
             <span class="track-meta">Hardware Rigs: Premium Studio Monitors, Outboard Gear & Microphone Setup</span>
         </a>
 
-        <a href="https://flaversoulrecords.com" class="track-entry">
+        <!-- FX and DSP Card -->
+        <a href="analog-gear.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">FX and DSP</span>
-                <span class="track-version">View Gear →</span>
+                <span class="track-version">View &rarr;</span>
             </div>
             <span class="track-meta">Processing Rack: Classic Analog Routing, Mixing Desks & Distortion Units</span>
         </a>
 
-        <a href="https://flaversoulrecords.com" class="track-entry">
+        <!-- Mac Pro and Plugins Card -->
+        <a href="plugins.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mac Pro and Plugins</span>
-                <span class="track-version">View Architecture →</span>
+                <span class="track-version">View &rarr;</span>
             </div>
             <span class="track-meta">Digital Core: Waves Mercury, UAD Octo DSP Acceleration & Studio Classics</span>
         </a>
+
     </div>
 
-    <!-- Restored Bottom Action Button -->
-    <a href="index.html" class="foyer-button">Return to Foyer</a>
+    <hr class="layout-divider">
+
+    <!-- Twin Footer Button Navigation Layout -->
+    <div class="navigation-group">
+        <a href="index.html" class="foyer-button">Foyer</a>
+        <a href="studio.html" class="foyer-button">Studio</a>
+    </div>
 
 </body>
 </html>
