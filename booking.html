@@ -17,11 +17,10 @@
             box-sizing: border-box;
         }
 
-        /* Vinyl Disc Graphic Profile Layer */
         .showcase-disc {
             width: 280px;
             height: 280px;
-            background-image: url("Studio/studio.jpeg");
+            background-image: url("FX/studio.jpeg");
             background-size: 116% 116%;
             background-repeat: no-repeat;
             background-position: center center;
@@ -32,7 +31,6 @@
             will-change: transform;
         }
 
-        /* Section Dividers */
         .layout-divider {
             width: 100%;
             max-width: 600px;
@@ -41,7 +39,6 @@
             margin: 0 0 30px 0;
         }
 
-        /* Pricing Sheet Core Container */
         .price-container {
             width: 100%;
             max-width: 600px;
@@ -64,6 +61,7 @@
             font-size: 1.25rem;
             color: #000000;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         .price-value {
             font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
@@ -71,16 +69,7 @@
             font-weight: bold;
             color: #000000;
         }
-        .price-subtext {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem;
-            color: #000000;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 4px;
-        }
 
-        /* Equipment List Options Block */
         .tracklist-container {
             width: 100%;
             max-width: 600px;
@@ -129,16 +118,7 @@
             letter-spacing: 1px;
             white-space: nowrap;
         }
-        .track-meta {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem;
-            color: #000000;
-            letter-spacing: 0.5px;
-            line-height: 1.4;
-            margin-top: 8px;
-        }
 
-        /* Twin Navigation Control Buttons */
         .navigation-group {
             display: flex;
             justify-content: center;
@@ -173,7 +153,6 @@
             letter-spacing: 4px;
         }
 
-        /* iPhone Sizing Rules */
         @media (max-width: 600px) {
             body {
                 padding: 40px 15px;
@@ -200,49 +179,24 @@
 </head>
 <body>
 
-    <!-- Vinyl Disc Graphic Profile Layer -->
     <div class="showcase-disc"></div>
 
     <hr class="layout-divider">
 
-    <!-- Pricing Sheet Core Container -->
     <div class="price-container">
         <div class="price-row">
-            <div>
-                <div class="price-item">Single Hour Run</div>
-                <div class="price-subtext">Quick drop-ins & spot edits</div>
-            </div>
-            <span class="price-value">£75</span>
-        </div>
-        <div class="price-row">
-            <div>
-                <div class="price-item">Two Hour Session</div>
-                <div class="price-subtext">Focused tracking window</div>
-            </div>
-            <span class="price-value">£140</span>
-        </div>
-        <div class="price-row">
-            <div>
-                <div class="price-item">Half Day Session (3-4 Hours)</div>
-                <div class="price-subtext">Acoustic runs & arrangement blocks</div>
-            </div>
-            <span class="price-value">£65 / hr</span>
-        </div>
-        <div class="price-row">
-            <div>
-                <div class="price-item">Full Day Lockout (8 Hours)</div>
-                <div class="price-subtext">Comprehensive recording & tracking block</div>
-            </div>
+            <span class="price-item">Day Lockout (8 Hours)</span>
             <span class="price-value">£375</span>
+        </div>
+        <div class="price-row" style="margin-top: 20px;">
+            <span class="price-item">Project Arrangement Submission</span>
+            <span class="price-value">By Invitation Only</span>
         </div>
     </div>
 
     <hr class="layout-divider">
 
-    <!-- Corrected Equipment List Options Block -->
     <div class="tracklist-container">
-
-        <!-- Guitars Card -->
         <a href="guitar.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Guitars</span>
@@ -250,7 +204,6 @@
             </div>
         </a>
 
-        <!-- MIDI Card -->
         <a href="midi.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">MIDI</span>
@@ -258,38 +211,37 @@
             </div>
         </a>
 
-        <!-- Mics, Amps & Monitors Card -->
         <a href="equipment.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mics, Amps & Monitors</span>
                 <span class="track-version">View &rarr;</span>
             </div>
-            <span class="track-meta">Hardware Rigs: Premium Studio Monitors, Outboard Gear & Microphone Setup</span>
         </a>
 
-        <!-- FX and DSP Card -->
         <a href="analogue.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">FX and DSP</span>
                 <span class="track-version">View &rarr;</span>
             </div>
-            <span class="track-meta">Processing Rack: Classic Analog Routing, Mixing Desks & Distortion Units</span>
         </a>
 
-        <!-- Mac Pro and Plugins Card -->
         <a href="architecture.html" class="track-entry">
             <div class="track-header">
                 <span class="track-name">Mac Pro and Plugins</span>
                 <span class="track-version">View &rarr;</span>
             </div>
-            <span class="track-meta">Digital Core: Waves Mercury, UAD Octo DSP Acceleration & Studio Classics</span>
         </a>
-
+        
+        <a href="mailto:memz@://flaversoulrecords.com" class="track-entry">
+            <div class="track-header">
+                <span class="track-name">Contact</span>
+                <span class="track-version">Email &rarr;</span>
+            </div>
+        </a>
     </div>
 
     <hr class="layout-divider">
 
-    <!-- Twin Footer Button Navigation Layout -->
     <div class="navigation-group">
         <a href="index.html" class="foyer-button">Foyer</a>
         <a href="booking.html" class="foyer-button">Studio</a>
