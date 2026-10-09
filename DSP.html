@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script data-goatcounter="https://studios.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Production Workstation</title>
+    <style>
+        body {
+            background-color: #ffffff !important; /* Pure white background */
+            margin: 0;
+            padding: 40px 20px 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        .grid-container {
+            display: grid;
+            /* Symmetric 4-column layout for iPad landscape */
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 30px; /* Clean spacing between workstation screen images */
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto 50px auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain; /* Keeps environment frames scaled uniformly */
+        }
+
+        /* Premium Navigation Button Styling */
+        .studio-button {
+            font-family: "Bodoni 72", "Bodoni MT", "Didot", serif;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 10px 25px;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            background: transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: auto;
+        }
+        .studio-button:hover {
+            background-color: #000000;
+            color: #ffffff;
+            letter-spacing: 4px;
+        }
+
+        /* Responsive shift to 2 columns if iPad is rotated to portrait */
+        @media (max-width: 1024px) and (orientation: portrait) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <img src="Mac/1.jpeg" alt="Workstation Suite">
+        <img src="Mac/2.jpeg" alt="Workstation Suite">
+        <img src="Mac/3.jpeg" alt="Workstation Suite">
+        <img src="Mac/4.jpeg" alt="Workstation Suite">
+        <img src="Mac/5.jpg" alt="Workstation Suite">
+        <img src="Mac/C8.png" alt="Workstation Suite">
+    </div>
+
+    <!-- Navigation Footer Option -->
+    <a href="index.html" class="studio-button">Return to Studio</a>
+
+</body>
+</html>
